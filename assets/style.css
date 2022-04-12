@@ -16,6 +16,121 @@ html, body{
   height: 100%;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+/*** Import Fonts ***/
+/*** Variables ***/
+/* -------------------------------- Small Window Size and Mobile Style -------------------------------- */
+ @media screen and (max-width: 875px) {
+	 .button-container {
+		 margin: 10px 10px !important;
+	}
+	 h2 {
+		 font-size: 15vw !important;
+	}
+}
+ @media screen and (max-width: 550px) {
+	 .nav, .navbar {
+		 width: 90% !important;
+	}
+	 .nav .nav-item, .navbar .nav-item {
+		 font-size: 10px !important;
+	}
+}
+ @media screen and (max-width: 350px) {
+	 .navbar-container {
+		 height: 120px !important;
+	}
+	 .nav, .navbar {
+		 flex-wrap: wrap !important;
+	}
+	 .nav .nav-item, .navbar .nav-item {
+		 margin: 5px 5px !important;
+	}
+}
+/* -------------------------------- General Style -------------------------------- */
+ html, body {
+	 font-family: 'Lato', sans-serif;
+	 font-weight: 300;
+}
+
+ p.intro-des {
+	 position: relative;
+	 font-size: 20px;
+	 line-height: 35px;
+	 margin-top: 50px;
+}
+ p.intro-des a {
+	 color: #ffffff;
+}
+ p.intro-des span {
+	 font-size: 15px;
+}
+ .button-row-container {
+	 width: 250px;
+	 height: 50px;
+	 position: relative;
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: space-between;
+	 align-items: center;
+	 margin: 0 auto;
+}
+/*** Navbar ***/
+ .navbar-container {
+	 position: fixed;
+	 top: 0;
+	 left: 50%;
+	 margin-right: 50%;
+	 transform: translateX(-50%);
+	 z-index: 10;
+	 width: 100%;
+	 height: 70px;
+	 background: linear-gradient(to bottom, transparent 50%, transparent 100%);
+}
+ .nav, .navbar {
+	 width: 500px;
+	 margin: auto;
+	 margin-top: 20px;
+	 font-family: 'Lato', sans-serif;
+	 font-size: 13px;
+	 font-weight: 400;
+	 letter-spacing: 2px;
+	 list-style: none;
+	 display: -webkit-flex;
+	 display: flex;
+	 -webkit-justify-content: space-between;
+	 justify-content: space-between;
+	 flex-wrap: nowrap;
+}
+ .nav a, .navbar a {
+	 color: #ffffff;
+   text-shadow:1px 1px 2px black ;
+	 text-decoration: none;
+}
+ .nav .nav-item, .navbar .nav-item {
+	 padding: 5px 0;
+}
+ .nav .nav-item:after, .navbar .nav-item:after {
+	 content: '\00a0';
+	 display: block;
+	 height: 1px;
+	 width: 100%;
+	 position: relative;
+	 top: 3px;
+	 background: transparent;
+	 transition: top 0.3s ease-out;
+	 -webkit-transition: top 0.3s ease-out;
+}
+ .nav .nav-item:hover:after, .navbar .nav-item:hover:after {
+	 top: 7px;
+	 background: #3c3c3c;
+}
+ .active:after {
+	 height: 2px !important;
+	 background: #cbb87f !important;
+}
+
+
 /*--------------------------------
 GLOBAL
 ---------------------------------*/
@@ -28,15 +143,30 @@ p{
 }
 
 .btn {
-    color: #fff;
+  color: white;
     padding: 10px 20px;
     font-size: 11px;
     letter-spacing: 3px;
     font-weight: 500;
-    background-color: #daa37f;
+    background-color: #cbb87f;
     border-radius: 0;
     text-align: center;
-  text-transform: uppercase;
+    text-transform: uppercase;
+  text-shadow: 1px 1px 2px black;
+}
+
+.btn1 {
+  color: white;
+    padding: 10px 20px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    background-color: #cbb87f;
+    border-radius: 0;
+    text-align: center;
+    text-transform: uppercase;
+  text-shadow: 1px 1px 2px black;
+  margin-left: 10%;
 }
 
 .btn--opacity {
@@ -191,7 +321,7 @@ BANNER
     font-size: 56px;
     color: #fff;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     letter-spacing: 1px;
     font-weight: 500;
     animation: opacity 3s;
@@ -201,7 +331,7 @@ BANNER
     font-size: 14px;
     color: #fff;
     margin: 0;
-    margin-bottom: 18px;
+    margin-bottom: 28px;
     animation: opacity 3s;
 }
 
@@ -209,11 +339,11 @@ BANNER
 TYPE OF COFFEE
 ---------------------------------*/
 .sect--type{
-  background-image: url('https://image.ibb.co/nNCuib/coffee_item_10.jpg');
+  background-color: #007339;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #fff;
+  background-color: #f0ebda;
 }
 
 .sect__title {
@@ -241,38 +371,19 @@ TYPE OF COFFEE
     margin-bottom: 15px;
 }
 
-.coffee__img {
-    width: 90%;
-}
-
 .coffee__descr {
     margin: 0;
     line-height: 23px;
 }
 
 /*--------------------------------
-STORY
----------------------------------*/
-
-.story-img {
-    background-image: url('https://image.ibb.co/kc6XKG/section_bg_12.jpg');
-    height: 0;
-    padding-bottom: 52%;
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  background-color: #1d140b;
-}
-
-/*--------------------------------
 2 HALF SECTION 
 ---------------------------------*/
 .half-sect__second {
-    background-image: url('http://image.ibb.co/c339Yb/section_bg_9.jpg');
+    background-image: url('/assets/img/IMG_3981\ \(1\).jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-      background-color:#fff;
 }
 
 .half {
@@ -287,19 +398,23 @@ STORY
 }
 
 .description__p {
+    margin-left: 10%;
     margin-bottom: 40px;
+    color: white;
 }
 
 .description__title {
     margin-top: 0;
+    margin-left: 10%;
     margin-bottom: 15px;
+    color: white;
 }
 
 /*--------------------------------
 GREAT COFFEE
 ---------------------------------*/
 .sect--great {
-    background-image: url('https://image.ibb.co/kvDRDb/section_bg_10.jpg');
+  background-image: url('/assets/img/pexels-sohail-nachiti-807598-modified.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
