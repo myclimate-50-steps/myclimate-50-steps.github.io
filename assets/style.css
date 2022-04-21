@@ -401,7 +401,7 @@ TYPE OF COFFEE
 2 HALF SECTION 
 ---------------------------------*/
 .half-sect__second {
-  background-image: url("/assets/img/IMG_3981\ \(1\).jpg");
+  background-image: url("../assets/img/IMG_3981\ \(1\).jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
