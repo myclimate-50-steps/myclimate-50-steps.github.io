@@ -156,7 +156,7 @@ p {
   letter-spacing: 3px;
   font-weight: 500;
   background-color: #cbb87f;
-  border-radius: 0;
+  border-radius: 18px;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px black;
@@ -169,11 +169,26 @@ p {
   letter-spacing: 3px;
   font-weight: 500;
   background-color: #cbb87f;
-  border-radius: 0;
+  border-radius: 18px;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px black;
   margin-left: 10%;
+}
+
+.btn2 {
+  color: white;
+  padding: 10px 20px;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  background-color: #cbb87f;
+  border-radius: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px black;
+  margin-left: 6%;
+  margin-bottom: 1%;
 }
 
 .btn--opacity {
@@ -395,11 +410,11 @@ TYPE OF COFFEE
 .half {
   width: 50%;
   display: table-cell;
-  background-color: #fff;
+  background-color: white;
 }
 
 .half-sect__first {
-  padding: 150px;
+  padding: 50px;
   background-color: #fff;
 }
 
@@ -408,8 +423,19 @@ TYPE OF COFFEE
   margin-bottom: 40px;
   color: white;
 }
-
+.unserprojekt {
+  margin-left: 10%;
+  margin-bottom: 40px;
+  color: #007339;
+}
+.unserprojekt__title {
+  margin-top: 0;
+  margin-left: 10%;
+  margin-bottom: 15px;
+  color: #000000;
+}
 .description__title {
+  text-shadow: 1px 1px 2px black;
   margin-top: 0;
   margin-left: 10%;
   margin-bottom: 15px;
@@ -428,147 +454,24 @@ GREAT COFFEE
   background-color: #fff;
 }
 
-/*--------------------------------
-THE BEST COFFEE SHOP
----------------------------------*/
-.sect--best {
-  background-image: url("https://image.ibb.co/mh6S3b/section_bg_3.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 160px 0;
-  background-color: #000;
-}
-
-.best__title {
-  letter-spacing: 1px;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-top: 25px;
-  margin-bottom: 15px;
-  color: #daa37f;
-}
-
-.best__img {
-  width: 50px;
-}
-
-.best--margin {
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-
-.best--bottom {
-  margin-bottom: 40px;
-}
-/*--------------------------------
-THREE IMAGES
----------------------------------*/
-.three-img__img {
-  height: 0;
-  padding-bottom: 33.3%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.three-img {
-  display: table;
-  height: 33.3%;
-  width: 100%;
-}
-
-.three-img--1 {
-  background-image: url("http://image.ibb.co/jjTnKG/gallery_coffee_image_1.jpg");
-}
-
-.three-img--2 {
-  background-image: url("http://image.ibb.co/iKxmDb/gallery_coffee_image_2_1.jpg");
-}
-
-.three-img--3 {
-  background-image: url("http://image.ibb.co/b5qTRw/gallery_coffee_image_5.jpg");
-}
-
-/*--------------------------------
-BLOG IMAGES
----------------------------------*/
-
-.last-articles {
-  margin-top: 50px;
-}
-.article-pre__img {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-bottom: 80%;
-}
-
-.article-pre {
-  background-color: #fff;
-}
-
-.article-pre__title {
-  letter-spacing: 1px;
-  font-size: 16px;
-  margin-top: 0;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.article-pre__date {
-  color: #767676;
-  line-height: 23px;
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0;
-  margin-bottom: 5px;
-  display: inline-block;
-  font-family: "Nunito", sans-serif;
-}
-
-.article-pre__info {
-  padding: 25px 20px 20px 20px;
-}
-.article-pre__ex {
-  margin: 0;
-  line-height: 22px;
-}
-
-.article-pre-1 .article-pre__img {
-  background-image: url("https://images.pexels.com/photos/374592/pexels-photo-374592.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
-}
-
-.article-pre-2 .article-pre__img {
-  background-image: url("https://images.pexels.com/photos/64775/pexels-photo-64775.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
-}
-
-.article-pre-3 .article-pre__img {
-  background-image: url("https://static.pexels.com/photos/373888/pexels-photo-373888.jpeg");
-}
-
-/*--------------------------------
-FOOTER
----------------------------------*/
+/*-------------------------
+Footer
+-------------------------*/
 .footer {
   display: table;
   width: 100%;
-  position: fixed;
   bottom: 0;
   left: 0;
-  z-index: -1;
 }
 
 .footer__half {
   width: 50%;
   display: table-cell;
-  padding: 100px 140px;
+  padding: 5px 100px;
 }
 
 .footer__half-1 {
-  background-image: url("https://image.ibb.co/mRGjDm/section_bg_7.jpg");
+  background-color: black;
   background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -578,28 +481,20 @@ FOOTER
   background-color: #000;
 }
 
-.footer__big-title {
-  margin-top: 0;
-  text-transform: uppercase;
-  line-height: 40px;
-  font-size: 30px;
-  margin-bottom: 25px;
-  color: #fff;
-}
-
 .footer__title {
   letter-spacing: 1px;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 10px;
-  color: #daa37f;
+  margin-bottom: 5px;
+  color: #cbb87f;
 }
 
 .footer__desc {
   color: #d7d7d7;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
+
 /*--------------------------------
 RESPONSIVE
 ---------------------------------*/
