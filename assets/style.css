@@ -400,6 +400,12 @@ TYPE OF COFFEE
 /*--------------------------------
 2 HALF SECTION 
 ---------------------------------*/
+
+.half-sect {
+  width: 100%;
+  display: flex;
+}
+
 .half-sect__second {
   background-image: url("../assets/img/IMG_3981\ \(1\).jpg");
   background-position: center;
@@ -409,13 +415,20 @@ TYPE OF COFFEE
 
 .half {
   width: 50%;
-  display: table-cell;
   background-color: white;
 }
 
 .half-sect__first {
-  padding: 50px;
+  padding: 4.4rem;
   background-color: #fff;
+}
+
+.description__project {
+  margin-bottom: 2rem;
+}
+
+.description__project p {
+  line-height: 0.6rem;
 }
 
 .description__p {
@@ -424,14 +437,9 @@ TYPE OF COFFEE
   color: white;
 }
 .unserprojekt {
-  margin-left: 10%;
-  margin-bottom: 40px;
   color: #007339;
 }
 .unserprojekt__title {
-  margin-top: 0;
-  margin-left: 10%;
-  margin-bottom: 15px;
   color: #000000;
 }
 .description__title {
