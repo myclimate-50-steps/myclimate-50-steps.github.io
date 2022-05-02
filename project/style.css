@@ -11,23 +11,28 @@ RESET
 
 html,
 body {
+  background-image: url("/assets/img/pexels-tomas-anunziata-3876407.jpg");
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  display: table;
   height: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  animation: banner-in 2s;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300);
-
-@media screen and (max-width: 875px) {
-  .button-container {
-    margin: 10px 10px !important;
-  }
-
-  h2 {
-    font-size: 15vw !important;
-  }
-}
 
 @media screen and (max-width: 550px) {
   .nav,
@@ -56,38 +61,11 @@ body {
     margin: 5px 5px !important;
   }
 }
-
 /* -------------------------------- General Style -------------------------------- */
 html,
 body {
   font-family: "Lato", sans-serif;
   font-weight: 300;
-}
-
-p.intro-des {
-  position: relative;
-  font-size: 20px;
-  line-height: 35px;
-  margin-top: 50px;
-}
-
-p.intro-des a {
-  color: #ffffff;
-}
-
-p.intro-des span {
-  font-size: 15px;
-}
-
-.button-row-container {
-  width: 250px;
-  height: 50px;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
 }
 
 /*** Navbar ***/
@@ -164,23 +142,6 @@ p {
   color: #ffffff;
   line-height: 23px;
   font-family: "Nunito", sans-serif;
-}
-
-.btn {
-  color: white;
-  padding: 10px 20px;
-  font-size: 11px;
-  letter-spacing: 3px;
-  font-weight: 500;
-  background-color: #cbb87f;
-  border-radius: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 2px black;
-}
-
-.btn--opacity {
-  animation: opacity 3s;
 }
 
 /*--------------------------------
@@ -266,65 +227,6 @@ p {
   }
 }
 
-/*--------------------------------
-  BANNER
-  ---------------------------------*/
-.banner {
-  background-image: url("../assets/img/pexels-tomas-anunziata-3876407.jpg");
-  background-color: #000;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  display: table;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.banner__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: table;
-  height: 100%;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.4);
-  animation: banner-in 2s;
-}
-
-.banner__container {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.banner__scroll-down {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  margin-left: -12px;
-  cursor: pointer;
-  animation: opacity 3s;
-}
-
-.banner__title {
-  font-size: 56px;
-  color: #fff;
-  margin-top: 0;
-  margin-bottom: 0px;
-  letter-spacing: 1px;
-  font-weight: 500;
-  animation: opacity 3s;
-}
-
-.banner__text {
-  font-size: 14px;
-  color: #fff;
-  margin: 0;
-  margin-bottom: 28px;
-  animation: opacity 3s;
-}
-
 @import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
 
 :root {
@@ -338,38 +240,25 @@ p {
   box-sizing: border-box;
 }
 
-.page-content {
-  display: grid;
-  grid-gap: 1rem;
-  padding: 1rem;
-  font-family: var(--font-sans);
+.cards {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 10%;
-}
-
-@media (min-width: 600px) {
-  .page-content {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 800px) {
-  .page-content {
-    grid-template-columns: repeat(4, 1fr);
-  }
+  align-content: center;
+  margin-top: 8rem;
 }
 
 .card {
   position: relative;
   display: flex;
-  align-items: flex-end;
+  flex: 0 0 auto;
+  margin: 10px;
   overflow: hidden;
   padding: 1rem;
-  width: 100%;
+  width: 18rem;
+  height: 25rem;
   text-align: center;
   color: whitesmoke;
   background-color: whitesmoke;
@@ -378,13 +267,7 @@ p {
     0 16px 16px rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 600px) {
-  .card {
-    height: 350px;
-  }
-}
-
-.card:before {
+.card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -397,7 +280,7 @@ p {
   pointer-events: none;
 }
 
-.card:after {
+.card::after {
   content: "";
   display: block;
   position: absolute;
