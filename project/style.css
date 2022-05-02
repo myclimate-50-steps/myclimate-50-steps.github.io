@@ -25,11 +25,12 @@ body {
   }
 
   h2 {
-    font-size: 15vw !important;
+    font-size: 8vw !important;
   }
 }
 
 @media screen and (max-width: 550px) {
+
   .nav,
   .navbar {
     width: 90% !important;
@@ -37,7 +38,7 @@ body {
 
   .nav .nav-item,
   .navbar .nav-item {
-    font-size: 10px !important;
+    font-size: 6px !important;
   }
 }
 
@@ -406,25 +407,23 @@ p {
   width: 100%;
   height: 200%;
   pointer-events: none;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.009) 11.7%,
-    rgba(0, 0, 0, 0.034) 22.1%,
-    rgba(0, 0, 0, 0.072) 31.2%,
-    rgba(0, 0, 0, 0.123) 39.4%,
-    rgba(0, 0, 0, 0.182) 46.6%,
-    rgba(0, 0, 0, 0.249) 53.1%,
-    rgba(0, 0, 0, 0.32) 58.9%,
-    rgba(0, 0, 0, 0.394) 64.3%,
-    rgba(0, 0, 0, 0.468) 69.3%,
-    rgba(0, 0, 0, 0.54) 74.1%,
-    rgba(0, 0, 0, 0.607) 78.8%,
-    rgba(0, 0, 0, 0.668) 83.6%,
-    rgba(0, 0, 0, 0.721) 88.7%,
-    rgba(0, 0, 0, 0.762) 94.1%,
-    rgba(0, 0, 0, 0.79) 100%
-  );
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.009) 11.7%,
+      rgba(0, 0, 0, 0.034) 22.1%,
+      rgba(0, 0, 0, 0.072) 31.2%,
+      rgba(0, 0, 0, 0.123) 39.4%,
+      rgba(0, 0, 0, 0.182) 46.6%,
+      rgba(0, 0, 0, 0.249) 53.1%,
+      rgba(0, 0, 0, 0.32) 58.9%,
+      rgba(0, 0, 0, 0.394) 64.3%,
+      rgba(0, 0, 0, 0.468) 69.3%,
+      rgba(0, 0, 0, 0.54) 74.1%,
+      rgba(0, 0, 0, 0.607) 78.8%,
+      rgba(0, 0, 0, 0.668) 83.6%,
+      rgba(0, 0, 0, 0.721) 88.7%,
+      rgba(0, 0, 0, 0.762) 94.1%,
+      rgba(0, 0, 0, 0.79) 100%);
   transform: translateY(-50%);
   transition: transform calc(var(--d) * 2) var(--e);
 }
@@ -456,7 +455,7 @@ p {
   z-index: 1;
 }
 
-.content > * + * {
+.content>*+* {
   margin-top: 1rem;
 }
 
@@ -481,7 +480,7 @@ p {
     transform: translateY(calc(100% - 4.5rem));
   }
 
-  .content > *:not(.title) {
+  .content>*:not(.title) {
     opacity: 0;
     transform: translateY(1rem);
     transition: transform var(--d) var(--e), opacity var(--d) var(--e);
@@ -507,8 +506,8 @@ p {
     transform: translateY(0);
   }
 
-  .card:hover .content > *:not(.title),
-  .card:focus-within .content > *:not(.title) {
+  .card:hover .content>*:not(.title),
+  .card:focus-within .content>*:not(.title) {
     opacity: 1;
     transform: translateY(0);
     transition-delay: calc(var(--d) / 8);
@@ -517,7 +516,7 @@ p {
   .card:focus-within:before,
   .card:focus-within:after,
   .card:focus-within .content,
-  .card:focus-within .content > *:not(.title) {
+  .card:focus-within .content>*:not(.title) {
     transition-duration: 0s;
   }
 }
