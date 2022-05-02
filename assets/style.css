@@ -24,11 +24,6 @@ body {
     margin: 10px 10px !important;
   }
 
-  h2 {
-    font-size: 5vw !important;
-    margin-top: -4vw;
-  }
-
   .description__p {
     float: left;
     margin-right: 15vw;
@@ -624,10 +619,6 @@ RESPONSIVE
 }
 
 @media screen and (max-width: 767px) {
-  .banner__title {
-    font-size: 40px;
-  }
-
   .banner__text {
     font-size: 2vw;
   }
