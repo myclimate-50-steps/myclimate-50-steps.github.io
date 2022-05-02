@@ -36,7 +36,6 @@ body {
 }
 
 @media screen and (max-width: 550px) {
-
   .nav,
   .navbar {
     width: 90% !important;
@@ -566,10 +565,6 @@ RESPONSIVE
     font-size: 54px;
   }
 
-  .half-sect__first {
-    padding: 100px;
-  }
-
   .three-img__img {
     padding-bottom: 40%;
   }
@@ -610,10 +605,6 @@ RESPONSIVE
 
   .coffe__img {
     width: 100%;
-  }
-
-  .half-sect__first {
-    padding: 80px;
   }
 
   .last-articles {
@@ -673,32 +664,12 @@ RESPONSIVE
     font-size: 26px;
   }
 
-  .half-sect__first {
-    padding: 50px;
-  }
-
   .article-pre {
     margin-bottom: 15px;
   }
 
   .footer__half {
-    width: 100%;
-    display: block;
     padding: 22px 50px;
-  }
-
-  .half-sect {
-    display: block;
-    height: auto;
-  }
-
-  .half {
-    width: 100%;
-    display: block;
-  }
-
-  .half-sect__second {
-    padding-bottom: 60%;
   }
 }
 
