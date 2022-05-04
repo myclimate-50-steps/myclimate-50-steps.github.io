@@ -506,27 +506,29 @@ GREAT COFFEE
 Footer
 -------------------------*/
 .footer {
-  display: table;
-  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
   bottom: 0;
   left: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #000;
 }
 
 .footer__half {
   width: 50%;
   display: table-cell;
-  padding: 5px 100px;
+  padding: 5px 0;
 }
 
 .footer__half-1 {
-  background-color: black;
   background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.footer__half-2 {
-  background-color: #000;
 }
 
 .footer__title {
@@ -567,11 +569,6 @@ RESPONSIVE
   .sect--no-bottom {
     padding-bottom: 0px !important;
   }
-
-  .footer__half {
-    padding: 90px 120px;
-  }
-
   .sect-t-footer {
     display: none;
   }
@@ -611,10 +608,6 @@ RESPONSIVE
   .footer__big-title {
     line-height: 38px;
     font-size: 28px;
-  }
-
-  .footer__half {
-    padding: 60px 90px;
   }
 }
 
@@ -660,7 +653,19 @@ RESPONSIVE
   }
 
   .footer__half {
-    padding: 22px 50px;
+    width: 100%;
+    display: block;
+    padding: 0 50px;
+  }
+  .half-sect {
+    height: auto;
+  }
+  .half {
+    width: 100%;
+    display: block;
+  }
+  .half-sect__second {
+    padding-bottom: 60%;
   }
 }
 
@@ -714,11 +719,6 @@ RESPONSIVE
     padding-bottom: 60%;
     width: 100%;
   }
-
-  .footer__half {
-    padding: 35px 35px;
-  }
-
   .footer__desc {
     margin-bottom: 10px;
   }
