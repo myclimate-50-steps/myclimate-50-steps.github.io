@@ -31,6 +31,7 @@ body {
 }
 
 @media screen and (max-width: 550px) {
+
   .nav,
   .navbar {
     width: 90% !important;
@@ -569,12 +570,14 @@ RESPONSIVE
   .sect--no-bottom {
     padding-bottom: 0px !important;
   }
+
   .sect-t-footer {
     display: none;
   }
 
   .footer {
     position: relative;
+    padding-left: 0;
   }
 }
 
@@ -657,13 +660,16 @@ RESPONSIVE
     display: block;
     padding: 0 50px;
   }
+
   .half-sect {
     height: auto;
   }
+
   .half {
     width: 100%;
     display: block;
   }
+
   .half-sect__second {
     padding-bottom: 60%;
   }
@@ -719,6 +725,7 @@ RESPONSIVE
     padding-bottom: 60%;
     width: 100%;
   }
+
   .footer__desc {
     margin-bottom: 10px;
   }
