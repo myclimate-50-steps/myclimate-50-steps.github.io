@@ -34,6 +34,7 @@ body {
   .nav,
   .navbar {
     width: 90% !important;
+    padding: 0;
   }
 
   .nav .nav-item,
