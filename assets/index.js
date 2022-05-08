@@ -16,7 +16,7 @@ $(document).ready(function () {
 
   $(".button-container, .switch-container").bind(
     "touchstart mousedown",
-    function (e) {}
+    function (e) { }
   );
 
   // Update nav selected when click
@@ -34,7 +34,7 @@ function smoothScroll() {
   $('a[href*="#"]:not([href="#"])').click(function () {
     if (
       location.pathname.replace(/^\//, "") ==
-        this.pathname.replace(/^\//, "") &&
+      this.pathname.replace(/^\//, "") &&
       location.hostname == this.hostname
     ) {
       var target = $(this.hash);
