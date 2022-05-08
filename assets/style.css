@@ -665,6 +665,11 @@ RESPONSIVE
     height: auto;
   }
 
+  .half-sect__first {
+    padding-left: 45px;
+    padding-top: 33px;
+  }
+
   .half {
     width: 100%;
     display: block;
@@ -676,12 +681,25 @@ RESPONSIVE
 }
 
 @media screen and (max-width: 480px) {
+
+  .banner {
+    height: 66%;
+  }
+
   .banner__title {
     font-size: 44px;
   }
 
+  .banner__container {
+    height: 70%;
+  }
+
   .sect {
     padding: 50px 0;
+  }
+
+  .half-sect {
+    display: block;
   }
 
   .sect__title,
@@ -701,7 +719,7 @@ RESPONSIVE
 
   .coffee__descr,
   .sect__subtitle {
-    padding: 0 15px;
+    padding: 19px;
   }
 
   .best--margin {
