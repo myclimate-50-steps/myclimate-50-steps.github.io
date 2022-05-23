@@ -34,7 +34,8 @@ body {
 
   .nav,
   .navbar {
-    width: 90% !important;
+    width: 80% !important;
+    padding-left: 5px;
   }
 
   .nav .nav-item,
@@ -46,6 +47,7 @@ body {
 @media screen and (max-width: 350px) {
   .navbar-container {
     height: 120px !important;
+    left: 43%;
   }
 
   .nav,
