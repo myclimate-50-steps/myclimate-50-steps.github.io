@@ -120,7 +120,6 @@ p.intro-des span {
   -webkit-justify-content: space-between;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding: 0;
 }
 
 .nav a,
@@ -667,7 +666,8 @@ RESPONSIVE
   }
 
   .half-sect__first {
-    padding-left: 45px;
+    padding-left: 0px;
+    padding-right: 0px;
     padding-top: 33px;
   }
 
@@ -708,6 +708,7 @@ RESPONSIVE
     line-height: 30px;
     font-size: 22px;
     margin-bottom: 15px;
+
   }
 
   .sect__subtitle {
