@@ -44,10 +44,10 @@ body {
   }
 }
 @media screen and (max-width: 550px) {
-
   .nav,
   .navbar {
-    width: 90% !important;
+    width: 80% !important;
+    padding-left: 5px;
   }
 
   .nav .nav-item,
@@ -59,6 +59,7 @@ body {
 @media screen and (max-width: 350px) {
   .navbar-container {
     height: 120px !important;
+    left: 43%;
   }
 
   .nav,
@@ -87,8 +88,7 @@ body {
   transform: translateX(-50%);
   z-index: 10;
   width: 100%;
-  height: 70px;
-  background: linear-gradient(to bottom, transparent 50%, transparent 100%);
+  background: linear-gradient(to bottom, #000 -10%, transparent 100%);
 }
 
 .nav,
@@ -96,6 +96,7 @@ body {
   width: 500px;
   margin: auto;
   margin-top: 20px;
+  margin-bottom: 20px;
   font-family: "Lato", sans-serif;
   font-size: 13px;
   font-weight: 400;
@@ -111,7 +112,7 @@ body {
 .nav a,
 .navbar a {
   color: #ffffff;
-  text-shadow: 1px 1px 2px rgb(88, 85, 85);
+  text-shadow: 1px 1px 2px black;
   text-decoration: none;
 }
 
@@ -136,7 +137,7 @@ body {
 .nav .nav-item:hover:after,
 .navbar .nav-item:hover:after {
   top: 7px;
-  background: #20202034;
+  background: #3c3c3c;
 }
 
 .active:after {
@@ -299,23 +300,25 @@ p {
   width: 100%;
   height: 200%;
   pointer-events: none;
-  background-image: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.009) 11.7%,
-      rgba(0, 0, 0, 0.034) 22.1%,
-      rgba(0, 0, 0, 0.072) 31.2%,
-      rgba(0, 0, 0, 0.123) 39.4%,
-      rgba(0, 0, 0, 0.182) 46.6%,
-      rgba(0, 0, 0, 0.249) 53.1%,
-      rgba(0, 0, 0, 0.32) 58.9%,
-      rgba(0, 0, 0, 0.394) 64.3%,
-      rgba(0, 0, 0, 0.468) 69.3%,
-      rgba(0, 0, 0, 0.54) 74.1%,
-      rgba(0, 0, 0, 0.607) 78.8%,
-      rgba(0, 0, 0, 0.668) 83.6%,
-      rgba(0, 0, 0, 0.721) 88.7%,
-      rgba(0, 0, 0, 0.762) 94.1%,
-      rgba(0, 0, 0, 0.79) 100%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.009) 11.7%,
+    rgba(0, 0, 0, 0.034) 22.1%,
+    rgba(0, 0, 0, 0.072) 31.2%,
+    rgba(0, 0, 0, 0.123) 39.4%,
+    rgba(0, 0, 0, 0.182) 46.6%,
+    rgba(0, 0, 0, 0.249) 53.1%,
+    rgba(0, 0, 0, 0.32) 58.9%,
+    rgba(0, 0, 0, 0.394) 64.3%,
+    rgba(0, 0, 0, 0.468) 69.3%,
+    rgba(0, 0, 0, 0.54) 74.1%,
+    rgba(0, 0, 0, 0.607) 78.8%,
+    rgba(0, 0, 0, 0.668) 83.6%,
+    rgba(0, 0, 0, 0.721) 88.7%,
+    rgba(0, 0, 0, 0.762) 94.1%,
+    rgba(0, 0, 0, 0.79) 100%
+  );
   transform: translateY(-50%);
   transition: transform calc(var(--d) * 2) var(--e);
 }
@@ -347,7 +350,7 @@ p {
   z-index: 1;
 }
 
-.content>*+* {
+.content > * + * {
   margin-top: 1rem;
 }
 
@@ -372,7 +375,7 @@ p {
     transform: translateY(calc(100% - 4.5rem));
   }
 
-  .content>*:not(.title) {
+  .content > *:not(.title) {
     opacity: 0;
     transform: translateY(1rem);
     transition: transform var(--d) var(--e), opacity var(--d) var(--e);
@@ -398,8 +401,8 @@ p {
     transform: translateY(0);
   }
 
-  .card:hover .content>*:not(.title),
-  .card:focus-within .content>*:not(.title) {
+  .card:hover .content > *:not(.title),
+  .card:focus-within .content > *:not(.title) {
     opacity: 1;
     transform: translateY(0);
     transition-delay: calc(var(--d) / 8);
@@ -408,7 +411,7 @@ p {
   .card:focus-within:before,
   .card:focus-within:after,
   .card:focus-within .content,
-  .card:focus-within .content>*:not(.title) {
+  .card:focus-within .content > *:not(.title) {
     transition-duration: 0s;
   }
 }
